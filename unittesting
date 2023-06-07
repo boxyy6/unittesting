@@ -1,0 +1,20 @@
+const number=[1,2,3,4,65];
+
+const processNumbers = (array) => {
+    const maxNumber = Math.max(...array);
+
+    let sum = 0;
+    for(let i=0;i<array.lenght;i++){
+        sum+=array[i];
+    }
+
+    const obj = {
+      maximum: maxNumber,
+      sum: sum
+    };
+    
+    return obj;
+  }
+  
+  const response=processNumbers(number)
+  console.log(response)
